@@ -33,6 +33,10 @@ class LoginProcessTest {
 		String username = "natalie";
 		String viewName = loginController.loginProcess(model, username,
 				"password");
+		assertEquals("login.html", viewName);
+		String msgExpected = "현재 '" + username + "'가 로그인한 상태입니다.";
+		verify(model)
+				.addAttribute("loginStatusMsg", msgExpected);
 	}
 
 }
