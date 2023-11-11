@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -15,6 +16,7 @@ import sqch15ex2.controller.LoginController;
 import sqch15ex2.controller.LoginProcessor;
 
 @ExtendWith(MockitoExtension.class)
+@DisplayName("로그인 액션 메소드 - 로그인 성공 처리 시험")
 class LoginProcessTest {
 
 	@Mock
