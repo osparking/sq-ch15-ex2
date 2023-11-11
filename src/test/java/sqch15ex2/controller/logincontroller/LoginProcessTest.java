@@ -1,6 +1,6 @@
 package sqch15ex2.controller.logincontroller;
 
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.mockito.BDDMockito.given;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -25,8 +25,8 @@ class LoginProcessTest {
 	private LoginController loginController;
 	
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void loginSuccessTest() {
+		given(loginProcessor.isLoggedIn()).willReturn(true);
 	}
 
 }
